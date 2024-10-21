@@ -1,0 +1,22 @@
+body { background: #FFF;}
+/* -- -- -- -- -- -- -- -- -- -- -- -- Banda cookies -- -- -- -- -- -- -- -- -- -- -- -- */
+
+div#contentLeyCookies { background: #EEE; color: #111; top: 0; width: 100%; position: fixed; z-index: 2000; text-align: center; opacity: .9; padding: 0;}
+div#contentLeyCookies div.contentCentradoLeyCookies { margin: 0 auto 0 auto; padding: 1em 4em 1em 4em; display: inline-block;}
+div#contentLeyCookies div.contentCentradoLeyCookies img.iconoLeyCookies { position: absolute; left: 2em; top: 1em;}
+div#contentLeyCookies div.contentCentradoLeyCookies span.textoLeyCookies { float: left; font-size: .7em; line-height: 1.2em;}
+div#contentLeyCookies div.contentCentradoLeyCookies a.enlaceCookies { color: #000; cursor: pointer; text-decoration: underline;}
+div#contentLeyCookies div.contentCentradoLeyCookies a.cerrarLeyCookies { background: url("cerrar.png") no-repeat center; position: absolute; top: 0; right: 1em; padding: .7em; text-decoration: none; width: 20px; height: 20px;}
+div#contentLeyCookies div.contentCentradoLeyCookies a.cerrarLeyCookies:hover { opacity: .5;}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- Página HTML -- -- -- -- -- -- -- -- -- -- -- -- */
+
+div.cenBoxCookies { max-width: 580px; width: 100%; margin: 4em auto;}
+div.boxCookies { padding: 0 3%;}
+div.boxCookies h2 { margin-bottom: 1em; font-size: 2em;}
+div.boxCookies h3 { margin: 3em 0 1em 0; font-size: 1.5em; line-height: 1.2em;}
+div.boxCookies p  { margin: 0 0 1em 0;}
+div.boxCookies ul { padding: 0 0 0 2em; margin-bottom: 1em;}
+div.boxCookies li { margin: 0 0 .5em 0; list-style: disc;}
+div.box-boton-aceptar-cookies{display: inline; margin-top:10px; padding:10px;}
+.boton-aceptar-cookies{padding:5px; border:1px solid black;}

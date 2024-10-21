@@ -1,0 +1,197 @@
+﻿@charset "UTF-8";
+
+@media screen and (min-width: 999px) { 
+
+/* Hover -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+a:hover img { -moz-opacity: .8; opacity: .8; filter: alpha(opacity=80);}
+.menu ul li a:hover { color: #888888;}
+.sidebar ul li a:hover span.txt { -moz-opacity: 1; opacity: 1; filter: alpha(opacity=100);}
+.sidebar ul li a:hover span.bg { -moz-opacity: .4; opacity: .4; filter: alpha(opacity=40);}
+.sidebar .rrss .btnFacebook:hover, .sidebar .rrss .btnTwitter:hover, .sidebar .rrss .btnInstagram:hover { -moz-opacity: .4; opacity: .4; filter: alpha(opacity=40);}
+.home h2 a:hover { color: #555555;}
+.item .txt a:hover { color: #888888;}
+.btnVerMas:hover { background: #DDDDDD url(../img/iconMas.png) no-repeat 10px 10px;}
+.boxBtns .rrss .btnFacebook:hover, .boxBtns .rrss .btnTwitter:hover { -moz-opacity: .4; opacity: .4; filter: alpha(opacity=40);}
+.boxBtns a:hover { color: #888;}
+.boxSubmenu .contSub .boxFiltro a:hover, .boxSubmenu .contSub .boxEnlaces a:hover { color: #555555;}
+.boxBtns .boxBtnsFotos .btnL:hover, .boxBtns .boxBtnsFotos .btnR:hover, .boxBtns .boxBtnsFotos .btnLupa:hover { -moz-opacity: 1; opacity: 1; filter: alpha(opacity=100);}
+.boxPaginador a:hover { -moz-opacity: 1; opacity: 1; filter: alpha(opacity=100);} 
+.boxInteriorFicha .txt a:hover { color: #000;}
+input[type="button"]:hover, input[type="submit"]:hover { background-color: #EEE; color: #888;}
+input[type="button"].btnCont:hover, input[type="submit"].btnCont:hover { background-color: #888; color: #FFF;}
+.contList h2 a:hover { color: #BBB;}
+.nodrizaLinks .perros a:hover,
+.adoptaLinks .perros a:hover,
+.nodrizaLinks .gatos a:hover,
+.adoptaLinks .gatos a:hover { color: #FFF; -moz-opacity: .8; opacity: .8; filter: alpha(opacity=80);}
+.ayuda a:hover { -moz-opacity: .7; opacity: .7; filter: alpha(opacity=70);}
+.boxSubmenu .contSub.busqueda input[type="button"]:hover, .boxSubmenu .contSub.busqueda input[type="submit"]:hover { background-color: #555; color: #FFF;}
+
+}
+
+@media screen and (max-width: 980px) {
+
+.mainBox { width: 680px;}
+#logo { left: 10px;}
+.btnMenu { display: block; position: absolute; z-index: 200; right: 10px; top: 30px; height: 27px; padding: 13px 45px 0 0; background: url(../img/btnMenu.png) no-repeat right center; background-size: 40px 40px; font-size: .9em;}
+.menu { display: none; top: 0; background: #eeeeee; padding-bottom: 2em;}
+.menu ul { display: block; float: left; width: auto; margin: 115px 0 20px 10px; padding: 0 10px 0 10px; border-left: 1px solid #bbbbbb; }
+.menu ul li { line-height: 1.5em;}
+.menu ul li.quienes { position: static; top: auto; left: auto;}
+.menu ul li.noticias { position: static; top: auto; left: auto;}
+.menu ul li.ayudanos { position: static; top: auto; left: auto;}
+.menu ul li.donativos { position: static; top: auto; right: auto;}
+.menu ul li.contactanos { position: static; top: auto; left: auto;}
+.menu ul li.shopping { position: static; top: auto; right: auto;}
+.sidebar { display: none; position: absolute; z-index: 200; left: 48%; top: 115px; width: auto; margin-bottom: 0; padding: 0 10px; border-left: 1px solid #bbbbbb;}
+.sidebar ul { float: left; font-size: 1.467em; line-height: 1.5em; text-align: left; margin-bottom: 0;}
+.sidebar ul li { height: auto; padding: 0; margin-bottom: auto; background-color: transparent;}
+.sidebar ul li a { position: relative; display: block; width: auto; height: auto; color: #bbbbbb;}
+.sidebar ul li a span.txt { display: block; width: auto; height: auto; -moz-opacity: 1; opacity: 1; filter: alpha(opacity=100);}
+.sidebar ul li a span.bg { display: none;}
+.sidebar ul li a.on { color: #888888;}
+.sidebar .rrss { margin-top: 0; padding-bottom: .2em;}
+
+.sidebar .rrss .btnFacebook, .sidebar .rrss .btnTwitter, .sidebar .rrss .btnInstagram { display: block; margin: 0; line-height: 1.5em; float: none; width: auto; height: auto; color: #000; background: none;}
+.sidebar .rrss .btnTwitter { padding-left: 0;}
+
+.menu.on, .sidebar.on {  -webkit-animation-duration: .4s; -webkit-animation-name: menuToogle; -webkit-animation-timing-function: ease-in-out; -moz-opacity: .97; opacity: .97; filter: alpha(opacity=97); display: block;}
+@-webkit-keyframes menuToogle { from { opacity: 0;} to { opacity: .97;} }
+.content { float: left; width: 680px;}
+
+.item .txt { padding: 8% 6%;}
+
+.colHome { width: 340px;}
+.colDos .item { margin-right: 10px; width: 320px;}
+.colUna { margin: 0 10px 0 10px;}
+.boxSubmenu { margin-bottom: 20px;}
+
+.bloqAviso { width: 90%; padding: 20px 5% 10px 5%; background: #fff;}
+}
+
+@media screen and (max-width: 680px) { 
+
+.mainBox { width: 100%;}
+#logo { top: 12px;}
+#logo img { height: 1000px;}
+.btnMenu { top: 15px;}
+.header { height: 70px;}
+.menu ul { margin: 75px 0 20px 10px; padding: 0 0 0 10px;}
+.sidebar { top: 75px; width: 150px; margin: 0; padding: 0 0 0 10px;}
+.content { width: 100%;}
+
+.home { width: 100%; height: auto; margin-left: 0; padding-bottom: 1em; }
+.banner { width: 100%;}
+.banner .slide {/* height: 230px;*/ width: 100%; background-size: auto 230px;}
+
+.home h1 { float: left; width: 90%; margin: 0; padding: 20px 5% 10px 5%;}
+.home h2 { float: left; width: 96%; margin: 0 2% 10px 2%; background: none;}
+.btnOferta { display: block; position: static; right: auto; bottom: auto; margin: 0 0 10px 0;}
+
+.colHome { float: left; width: 50%;}
+.colHome .colDos .item { margin: 0 2% 10px 2%; width: 96%;}
+.colUna { margin: 0 2% 0 2%; width: 96%;}
+.colTres .item { margin: 0 2% 2% 2%; width: 46%; height: auto;}
+.colDos .item { margin: 0 2% 2% 2%; width: 46%;/* min-height: 400px;*/}
+.colDos .item.title h2 { font-size: 1.5em; padding-top: 2px; height: auto;}
+.colDos .item.title { height: auto; min-height: 1px;}
+.boxSubmenu { margin-bottom: 20px;}
+.imgList { width: 25%; overflow: hidden; margin-right: 15px;} 
+.imgList img { width: 200px; margin-right: -30px;}
+.contList { margin-top: 1.5em;}
+
+.colUnoP  { width: 48%; margin: 0 2% 5px 0;}
+.colDosP  { width: 98%; margin: 0 2% 5px 0;}
+.colTresP { width: 98%; margin: 0 2% 5px 0;}
+.colCuatroM { width: 48%; margin: 0 2% 5px 0;}
+.colCuatroP { width: 48%; margin: 0 2% 5px 0;}
+.colTresP label { margin-right: 3%;}
+.colShop .item .txt { min-height: 6em;}
+.colShop .item h2 { width: 100%;}
+.colShop .item h3.precio { position: absolute; right: 0; bottom: 0; background: #c6c691; color: #FFF; padding: 3% 5%; margin-bottom: 0;}
+
+.boxCesta .btnCont { margin-bottom: 5px;}
+
+.rowBloqP .colUnoP  { width: 98%;}
+.boxInteriorFicha .txtDoble .col { float: left; width: 100%;}
+.boxInteriorFicha .txtDoble .col.g { margin-right: 0;}
+
+.colUnoP.total { float: right;}
+.gastos .colUnoP { width: 98%;}
+.tdUnidad input[type="text"] {width: 70%;}
+.boxSubmenu .contSub { height: auto; padding-bottom: 10px;}
+.boxSubmenu .contSub .boxFiltro span { display: none;}
+
+.boxBtns .boxBtnsFotos { margin: 0 0 0 3.5%;}
+.boxBtns .boxBtnsFotos .btnLupa { display: none;}
+.boxBtns .boxBtnsFotos .btnL, .boxBtns .boxBtnsFotos .btnR { margin: 0 10px 0 0; -moz-opacity: 1; opacity: 1; filter: alpha(opacity=100);}
+.boxBtns .rrss { margin: 0 3.5% 0 0;}
+.boxBtns .boxPaginador { margin: 3px 0 0 2.5%;}
+
+.boxSubmenu { background: none;}
+/* .boxSubmenu .contSub .boxFiltro { margin-right: 15px;} */
+.boxSubmenu .contSub .boxEnlaces { float: left; text-align: left; width: 100%; margin-top: 10px; padding-top: 12px; background: url(../img/bgPuntos.gif) repeat-x top left;}
+.boxSubmenu .contSub .boxFiltro a, .boxSubmenu .contSub .boxEnlaces a { margin: 0 12px 0 0; color: #888888;}
+.boxSubmenu .contSub .boxFiltro { float: left; width: 100%; padding-top: 12px; background: url(../img/bgPuntos.gif) repeat-x top left;}
+
+.tdImagen { width: 15%;}
+.tdImagen img { height: auto; width: 90%;}
+
+.nodrizaLinks { margin-bottom: 1.5em;}
+.nodrizaLinks .perros, .nodrizaLinks .gatos { font-size: 3.5em;}
+
+input, select, textarea { font-size: 1em;}
+}
+
+@media screen and (max-width: 580px) {
+.colDos *, .colShop *,
+body { font-size: 1.12em;}
+.home h1 { font-size: 1.1em;}
+.home h2 { font-size: 1.4em;}
+.home h2 span { font-size: .62em;}
+.banner { width: 100%;}
+.banner .slide {/* height: 190px;*/ width: 100%; background-size: auto 190px;}
+
+#menuV, #menuH { font-size: 22px;}
+.sidebar ul { margin-bottom: 0px;}
+
+
+.colDos .item {/* min-height: 360px;*/}
+.colDos .item.title { height: auto; min-height: 1px;}
+
+.adoptaLinks .perros, .adoptaLinks .gatos { margin-bottom: 3.5%;}
+
+input, select, textarea { font-size: .9em;}
+.boxCesta table { font-size: .9em;}
+}
+
+@media screen and (max-width: 490px) { 
+.banner { width: 100%;}
+.banner .slide {/* height: 170px;*/ width: 100%; background-size: auto 170px;}
+
+.colDos .item {/* min-height: 380px;*/}
+.colDos .item.title h2 { font-size: 1.3em; padding-top: 2px; height: auto;}
+.colDos .item.title { height: auto; min-height: 1px;}
+
+}
+
+@media screen and (max-width: 460px) { 
+.banner { width: 100%;}
+.banner .slide { /*height: 130px;*/ width: 100%; background-size: auto 130px;}
+
+.colUnoP, .colCuatroM, .colCuatroP { width: 98%;}
+
+.colHome { width: 100%; margin: 0 0 2em 0;}
+.colDos .item { width: 96%; min-height: 1px; height: auto;}
+.colDos .item.title { height: auto; min-height: 1px;}
+.imgList a { margin-right: -20px;}
+.imgList img { width: 240px; margin-right: -60px;}
+.contList p { line-height: 1.25em; font-size: .95em;}
+.boxFicha.condiciones .boxInteriorFormulario { padding: 20px 10px 10px 10px;}
+.boxSubmenu .contSub .boxFiltro a.btnNombre { float: left; text-align: left; width: 100%; padding-left: 25px; background: url(../img/bgLupa.png) no-repeat 0 center; margin: .5em 0 0 0;}
+	
+.boxBtns .acciones { float: left; width: 96.5%; text-align: right; padding-right: 3.5%; margin: .4em 0 0 0; border-right: none;}
+
+.rowBloq.gastos select { font-size: .9em;}
+
+}

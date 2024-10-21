@@ -1,0 +1,41 @@
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{ overflow:auto; padding: 40px 0 0 0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+#cboxOverlay{background: #eeeeee;}
+#colorbox{}
+    #cboxTopLeft{}
+    #cboxTopRight{}
+    #cboxBottomLeft{}
+    #cboxBottomRight{}
+    #cboxMiddleLeft{}
+    #cboxMiddleRight{}
+    #cboxTopCenter{}
+    #cboxBottomCenter{}
+    #cboxContent{overflow:hidden;}
+        #cboxError{padding:60px;}
+        #cboxLoadedContent{ margin-bottom: 32px;}
+        #cboxTitle{position:absolute; bottom: 0; left:0; text-align:left; width: 90%; color: #888888; font: 12px/14px normal normal normal 'PTSansRegular', sans-serif; ; }
+        #cboxCurrent{ position:absolute; bottom: 0; right: 0; text-align: right; width: auto; color: #bbbbbb; font: 11px/14px normal normal normal 'PTSansRegular', sans-serif; ;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        
+        #cboxPrevious{position:absolute; top: 5px; right: 70px; width: 30px; height: 30px; background: url(../img/iconL.png) center center no-repeat; text-indent:-9999px;}
+        #cboxPrevious.hover{ opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: .5; -moz-opacity: .5;}
+       
+        #cboxNext{position:absolute; top: 5px; right: 40px; width: 30px; height: 30px; background: url(../img/iconR.png) center center no-repeat; text-indent:-9999px;}
+        #cboxNext.hover{ opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: .5; -moz-opacity: .5;}
+        
+        #cboxClose{position:absolute; top: 5px; right: 0px; background: url(../img/iconX.png) no-repeat center center; width: 30px; height: 30px; text-indent:-9999px;}
+        #cboxClose.hover{ opacity: 0.5; filter: alpha(opacity=50); -khtml-opacity: .5; -moz-opacity: .5;}
+
+        #cboxLoadingOverlay{}
+        #cboxLoadingGraphic{background: #fff url(../img/preloader.gif) no-repeat center center;}
+
+        #colorbox .boxInteriorFormulario { float: left; width: 92%; padding: 10% 4% 6% 4%; background-color: #FFF;}

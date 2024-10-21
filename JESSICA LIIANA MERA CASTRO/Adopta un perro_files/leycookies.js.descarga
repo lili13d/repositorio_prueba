@@ -1,0 +1,67 @@
+var nombre_cookie = 'AcceptCookiesElRefugio';
+$(document).ready(function() {
+
+	//Evento cookies a todos los enlaces de la web, excepto el de la pol�tica de cookies.
+	$('body a').not('div#contentLeyCookies div.contentCentradoLeyCookies span.textoLeyCookies a.enlaceCookies').click(function () {
+		$('#contentLeyCookies').animate({height: 0, opacity: 0 }, 'slow', function(){$("#contentLeyCookies").hide();});
+		if (obtenerCookie(nombre_cookie) != '1') {
+			//'enviarCookie (nombre_cookie, '1', '365');
+		}
+	});
+
+
+    //Idioma en el que añadimos el html
+    var texto = 'Esta p&aacute;gina web utiliza cookies, propias y de terceros, para mejorar tu visita adaptando la navegaci&oacute;n a tus preferencias. Pulsa en el botón "Aceptar Cookie" para aceptar nuestra <a class="enlaceCookies" href="http://www.elrefugio.org/politicaPrivacidad.aspx" target="_blank">pol&iacute;tica de cookies</a>';
+    var botonAceptarCookie = '<div class="box-boton-aceptar-cookies"><button class="boton-aceptar-cookies" id="boton-aceptar-cookies">Aceptar Cookies</button>'
+    $('#contentLeyCookies').html("<div class='contentCentradoLeyCookies'><span class='textoLeyCookies'>" + texto + botonAceptarCookie + "</span> <a href='#' id='botonLeyCookies' class='cerrarLeyCookies'/>&nbsp;</a></div>");
+
+    //Comprobamos si existe la cookie, si ya existe no mostramos la advertencia
+   if ("1" == obtenerCookie(nombre_cookie)) {
+        $("#contentLeyCookies").hide();
+    } else {
+        $("#contentLeyCookies").show();
+    }
+
+    //Botón aceptar Cookies -> click - enviamos cookie y ocultamos barra de cookies
+    $("#boton-aceptar-cookies").click(function () {
+        enviarCookie(nombre_cookie, '1', '365');
+        $("#contentLeyCookies").hide();
+    });
+
+
+    //Evento js del botón de las cookies
+    document.getElementById('botonLeyCookies').onclick = function () {
+        $("#contentLeyCookies").animate({
+            height: 0, opacity: 0
+        }, 'slow', function () {
+            $("#contentLeyCookies").hide();
+
+        });
+        return false;
+    }
+});
+
+function enviarCookie (nombre_cookie,valor_cookie,vida_cookie_dias) {
+	//Establecemos la fecha en la que expira la cookie
+	var d = new Date();
+	d.setTime(d.getTime() + 24*60*60*1000*vida_cookie_dias); // tiempo en milisegundos
+	//Creamos la cookie
+	document.cookie = nombre_cookie +
+	"=" + encodeURIComponent(valor_cookie) +
+	"; expires=" + d.toGMTString() + "; path=/;";
+}
+
+/*
+* Función encargada de obtener la cookie y devolver su valor
+* @param name nombre de la cookie
+*/
+function obtenerCookie (name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
